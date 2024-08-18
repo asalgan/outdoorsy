@@ -1,7 +1,7 @@
 ### How to run this app:
 
 Navigate to the root directory and run
-`bundle install`
+`bundle install` &
 `bin/rails db:create db:migrate`
 
 Next, run `rails server` and navigate to localhost:3000
