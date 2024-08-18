@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Outdoor.sy</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'tailwind', 'inter-font', 'data-turbo-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body style="background-image: url('<%= asset_path('camping.jpg') %>'); background-size: cover; background-position: center;">>
+    <main class='container mx-auto px-4'>
+      <%= yield %>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<table>
+  <thead class="bg-gray-100">
+    <tr>
+      <th>
+        <%= sortable 'first_name', 'Full Name' %>
+      </th>
+      <th>Email</th>
+      <th>
+        <%= sortable 'vehicles.vehicle_type', 'Vehicle Type' %>
+      </th>
+      <th>Vehicle Name</th>
+      <th>Vehicle Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% customers.each do |customer| %>
+      <tr class="border-t">
+        <td><%= customer[:full_name] %></td>
+        <td><%= customer[:email] %></td>
+        <td><%= customer[:vehicle_type] %></td>
+        <td><%= customer[:vehicle_name] %></td>
+        <td><%= customer[:vehicle_length] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

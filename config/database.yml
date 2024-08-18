@@ -1,0 +1,11 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: <%= ENV.fetch("POSTGRES_DB") { "outdoorsy_app" } %>_development
+
+test:
+  <<: *default
+  database: <%= ENV.fetch("POSTGRES_DB") { "outdoorsy_app" } %>_test
