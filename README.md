@@ -27,4 +27,4 @@ You can test by running `bundle exec rspec spec` as well as `rubocop`.
 5. Based on the assignment parameters, there was a one-to-one relationship between vehicles and customers. In the future I can see a one-to-many relationship between customers and vehicles.
 6. More descriptive error handling such as showing exactly which line failed.
 7. Handling duplicate records. If a file is successful it currently says imported 4 records rather than specifying duplicate records.
-
+8. The ability to edit and delete records.

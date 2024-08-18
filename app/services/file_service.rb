@@ -21,7 +21,7 @@ class FileService
   private
 
   def parse_file
-    @file.read.force_encoding('UTF-8').split(/\n/).each do |line|
+    @file.read.split(/\n/).each do |line|
       process_line(line)
     end
   end
